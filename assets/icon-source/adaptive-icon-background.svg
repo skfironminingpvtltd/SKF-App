@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+  <radialGradient id="bg" cx="50%" cy="46%" r="75%">
+    <stop offset="0" stop-color="#1A1408"/>
+    <stop offset="0.55" stop-color="#0A0A0C"/>
+    <stop offset="1" stop-color="#000000"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#E7B94A" stop-opacity="0.30"/>
+    <stop offset="0.6" stop-color="#E7B94A" stop-opacity="0.07"/>
+    <stop offset="1" stop-color="#E7B94A" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+    <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FBE7A1" stop-opacity="0.75"/>
+    <stop offset="0.5" stop-color="#C99326" stop-opacity="0.25"/>
+    <stop offset="1" stop-color="#F2D27A" stop-opacity="0.65"/>
+  </linearGradient></defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="500" r="470" fill="url(#glow)"/>
+  <rect width="1024" height="1024" fill="url(#sheen)"/>
+</svg>

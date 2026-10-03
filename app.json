@@ -1,0 +1,121 @@
+{
+  "expo": {
+    "name": "SKF Iron & Mining Pvt Ltd",
+    "slug": "skf-iron-mining",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access for SKF Iron & Mining secure photo capture.",
+        "NSPhotoLibraryUsageDescription": "Gallery access for SKF Iron & Mining secure file sharing.",
+        "NSMicrophoneUsageDescription": "Microphone access for SKF Iron & Mining voice communication.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.skf.ironmining"
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "requestLegacyExternalStorage": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundImage": "./assets/adaptive-icon-background.png",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO"
+      ],
+      "package": "com.skf.ironmining"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "SKF Iron & Mining Pvt Ltd",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#070D11",
+          "image": "./assets/adaptive-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow SKF Iron & Mining to access media files.",
+          "cameraPermission": "Allow SKF Iron & Mining to use camera."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow SKF Iron & Mining to record voice notes."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#D4AF37",
+          "defaultChannel": "messages"
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Allow SKF Iron & Mining to access your contacts so you can share them in the chat."
+        }
+      ],
+      "expo-sharing",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow SKF Iron & Mining to access your photos so you can save chat pictures and videos.",
+          "savePhotosPermission": "Allow SKF Iron & Mining to save pictures, videos and audio from the chat to your phone.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      "expo-font",
+      [
+        "expo-navigation-bar",
+        {
+          "enforceContrast": false,
+          "style": "light"
+        }
+      ]
+    ],
+    "icon": "./assets/icon.png",
+    "backgroundColor": "#0A0E13",
+    "extra": {
+      "expo-navigation-bar": {
+        "enforceContrast": false,
+        "style": "light"
+      },
+      "eas": {
+        "projectId": "72f0337d-5243-4f44-9be6-e67bdd4cddca"
+      }
+    }
+  }
+}
